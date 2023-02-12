@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.clevertec.ghoncharko'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(path: ':miltiproject:core')
+    implementation project(path: ':miltiproject:core')
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
