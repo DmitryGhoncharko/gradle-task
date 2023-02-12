@@ -8,6 +8,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/miltiproject" />
+            <option value="$PROJECT_DIR$/miltiproject/api" />
+            <option value="$PROJECT_DIR$/miltiproject/core" />
           </set>
         </option>
       </GradleProjectSettings>
