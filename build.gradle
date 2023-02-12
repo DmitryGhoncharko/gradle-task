@@ -1,9 +1,8 @@
 plugins {
     id 'java'
-    id("com.github.johnrengelman.shadow") version "7.1.0"
 }
 
-group 'org.example'
+group 'ru.clevertec.ghoncharko'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -13,15 +12,7 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
-    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.10'
-}
-jar{
-    manifest {
-        attributes(
-                'Main-Class': 'ru.clevertec.ghoncharko.StringUtils'
-        )
-    }
+    implementation files('./utils/utils-1.3.5.jar')
 }
 
 test {
