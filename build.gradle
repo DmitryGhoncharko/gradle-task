@@ -1,7 +1,6 @@
 plugins {
     id 'java'
 }
-apply plugin: 'java-library'
 group 'ru.clevertec.ghoncharko'
 version '1.0-SNAPSHOT'
 
